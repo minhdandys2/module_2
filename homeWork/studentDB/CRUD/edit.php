@@ -1,5 +1,7 @@
 <?php
-include_once 'StudentManager.php';
+include_once '../class/Student.php';
+include_once '../class/DBConnect.php';
+include_once '../class/StudentManager.php';
 
 $studentManager = new StudentManager();
 $id = $_GET['id'];
@@ -7,6 +9,7 @@ $stmt = $studentManager->getStudentById($id);
 $name = $stmt->name;
 $phone = $stmt->phone;
 $address = $stmt->address;
+$image = $stmt->image;
 ?>
 
 <!doctype html>
@@ -19,7 +22,7 @@ $address = $stmt->address;
     <title>Document</title>
 </head>
 <body>
-<form action="update.php" method="post">
+<form action="update.php" method="post" enctype="multipart/form-data">
     <center>
         <table>
             <tr><h1>Quan ly sinh vien</h1></tr>
@@ -35,6 +38,13 @@ $address = $stmt->address;
             <tr>
                 <td>Address:</td>
                 <td><input type="text" name="address" value="<?php echo $address ?>"></td>
+            </tr>
+            <tr>
+                <td>Image:</td>
+                <td>
+                <img src="../<?php echo $image ?>" width="50" height="50">
+                    <input type="file" name="image"><br>
+                </td>
             </tr>
             <tr>
                 <td>

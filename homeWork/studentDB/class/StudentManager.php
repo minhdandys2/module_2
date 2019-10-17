@@ -1,5 +1,5 @@
 <?php
-include_once 'DBconnect.php';
+include_once 'DBConnect.php';
 include_once 'Student.php';
 
 class StudentManager
@@ -19,7 +19,7 @@ class StudentManager
         $result = $stmt->fetchAll();
         $students = [];
         foreach ($result as $value) {
-            $student = new Student($value['name'], $value['phone'], $value['address']);
+            $student = new Student($value['name'], $value['phone'], $value['address'],$value['image']);
             $student->id = $value['id'];
             array_push($students, $student);
         }
@@ -28,10 +28,11 @@ class StudentManager
 
     public function add($student)
     {
-        $stmt = $this->conn->prepare('INSERT INTO student(name, phone, address) VALUES (:name, :phone, :address)');
+        $stmt = $this->conn->prepare('INSERT INTO student(name, phone, address,image) VALUES (:name, :phone, :address,:image)');
         $stmt->bindParam(':name', $student->name);
         $stmt->bindParam(':phone', $student->phone);
         $stmt->bindParam(':address', $student->address);
+        $stmt->bindParam(':image', $student->image);
         $stmt->execute();
     }
 
@@ -44,21 +45,22 @@ class StudentManager
 
     public function update($id, $data)
     {
-        $stmt = $this->conn->prepare('UPDATE student SET name=:name , phone = :phone , address =:address WHERE id = :id');
+        $stmt = $this->conn->prepare('UPDATE student SET name=:name , phone = :phone , address =:address , image=:image WHERE id = :id');
         $stmt->bindParam(':name', $data->name);
         $stmt->bindParam(':phone', $data->phone);
         $stmt->bindParam(':address', $data->address);
+        $stmt->bindParam(':image', $data->image);
         $stmt->bindParam(':id', $id);
         $stmt->execute();
     }
 
     public function getStudentById($id)
     {
-        $stmt = $this->conn->prepare('SELECT name,phone,address FROM student WHERE id=:id');
+        $stmt = $this->conn->prepare('SELECT name,phone,address,image FROM student WHERE id=:id');
         $stmt->bindParam(':id', $id);
         $stmt->execute();
         $result = $stmt->fetch();
-        $student = new Student($result['name'], $result['phone'], $result['address']);
+        $student = new Student($result['name'], $result['phone'], $result['address'],$result['image']);
         return $student;
     }
 }
