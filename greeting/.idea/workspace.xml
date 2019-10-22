@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24b6dc5-e31c-4ef3-9fa4-42a75fa21619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/login_error.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/welcome_admin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/discount.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/viewDiscount.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MVC-Model/customer_manager/controller/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-Model/customer_manager/controller/CustomerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MVC-Model/customer_manager/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-Model/customer_manager/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MVC-Model/customer_manager/model/CustomerDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-Model/customer_manager/model/CustomerDB.php" afterDir="false" />
@@ -160,7 +159,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571733563207</updated>
-      <workItem from="1571733564341" duration="3728000" />
+      <workItem from="1571733564341" duration="12167000" />
     </task>
     <servers />
   </component>

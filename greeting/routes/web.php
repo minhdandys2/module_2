@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/greeting/{name?}', function ($name = null) {
     if ($name) {
         echo "Hello " . $name . '!';
@@ -23,14 +24,19 @@ Route::get('/greeting/{name?}', function ($name = null) {
         echo 'Hello world';
     }
 });
-Route::get('/login',function (){
+
+Route::get('/login', function () {
     return view("login");
 });
+
 Route::post('/login', function (Illuminate\Http\Request $request) {
-    if($request->userName == 'admin'
-    && $request->password == '123456') {
+    if ($request->userName == 'admin'
+        && $request->password == '123456') {
         return view('welcome_admin');
-    }else{
+    } else {
         return view('login_error');
     }
 });
+
+Route::get('/discount', 'ProductController@show');
+Route::post('/view','ProductController@calculate')->name("discount");
