@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -19,5 +21,16 @@ Route::get('/greeting/{name?}', function ($name = null) {
         echo "Hello " . $name . '!';
     } else {
         echo 'Hello world';
+    }
+});
+Route::get('/login',function (){
+    return view("login");
+});
+Route::post('/login', function (Illuminate\Http\Request $request) {
+    if($request->userName == 'admin'
+    && $request->password == '123456') {
+        return view('welcome_admin');
+    }else{
+        return view('login_error');
     }
 });
