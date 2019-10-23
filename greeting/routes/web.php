@@ -39,4 +39,7 @@ Route::post('/login', function (Illuminate\Http\Request $request) {
 });
 
 Route::get('/discount', 'ProductController@show');
-Route::post('/view','ProductController@calculate')->name("discount");
+Route::post('','ProductController@calculate')->name("discount");
+
+Route::get('/translation','DictionaryController@dictionary');
+Route::post('/check','DictionaryController@checkDictionary')->name('checkEnglish');
