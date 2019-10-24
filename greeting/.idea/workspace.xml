@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24b6dc5-e31c-4ef3-9fa4-42a75fa21619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/englishTranslation.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/notFound.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/showResultFound.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TankManagement/resources/views/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TankManagement/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TankManagement/resources/views/listCustomer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Timezone/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MVC-Model/customer_manager/controller/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-Model/customer_manager/controller/CustomerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MVC-Model/customer_manager/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-Model/customer_manager/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MVC-Model/customer_manager/model/CustomerDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-Model/customer_manager/model/CustomerDB.php" afterDir="false" />
@@ -13,8 +14,6 @@
       <change beforePath="$PROJECT_DIR$/../MVC-Model/customer_manager/view/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-Model/customer_manager/view/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MVC-Model/customer_manager/view/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-Model/customer_manager/view/list.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/viewDiscount.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/viewDiscount.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +162,8 @@
       <updated>1571733563207</updated>
       <workItem from="1571733564341" duration="14994000" />
       <workItem from="1571756851117" duration="5693000" />
-      <workItem from="1571791604951" duration="1219000" />
+      <workItem from="1571791604951" duration="4334000" />
+      <workItem from="1571842441929" duration="129000" />
     </task>
     <servers />
   </component>
