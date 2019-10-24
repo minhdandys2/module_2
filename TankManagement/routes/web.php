@@ -11,16 +11,23 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
-Route::prefix('customer')->group(function (){
-    Route::get('index','CustomerController@index')->name('customer.listCustomer');
-    Route::get('create','CustomerController@create')->name('customer.create');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('customer')->group(function () {
+    Route::get('index', 'CustomerController@index')->name('customer.listCustomer');
+    Route::get('create', 'CustomerController@create')->name('customer.create');
     Route::post('create', 'CustomerController@store')->name('customer.store');
-    Route::get('delete/{id}','CustomerController@delete')->name('customer.delete');
-    Route::get('edit/{id}','CustomerController@edit')->name('customer.edit');
-    Route::post('edit/{id}','CustomerController@update')->name('customer.update');
+    Route::get('delete/{id}', 'CustomerController@delete')->name('customer.delete');
+    Route::get('edit/{id}', 'CustomerController@edit')->name('customer.edit');
+    Route::post('edit/{id}', 'CustomerController@update')->name('customer.update');
 });

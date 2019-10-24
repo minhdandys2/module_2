@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $customers = Customer::all();
@@ -19,6 +24,7 @@ class CustomerController extends Controller
     public function store(Request $request){
         $customer = new Customer();
         $customer->name = $request->name;
+        $customer->age = $request->age;
         $customer->email = $request->email;
         $customer->address = $request->address;
 

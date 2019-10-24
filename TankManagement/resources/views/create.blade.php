@@ -9,6 +9,10 @@
                 <input type="text" class="form-control" id="name" name="name">
             </div>
             <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" class="form-control" id="age" name="age">
+            </div>
+            <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" name="email">
             </div>

@@ -7,6 +7,10 @@
         <input type="text" class="form-control" id="name" name="name" value="{{$customer->name}}">
     </div>
     <div class="form-group">
+        <label for="age">Age</label>
+        <input type="text" class="form-control" id="age" name="age" value="{{$customer->age}}">
+    </div>
+    <div class="form-group">
         <label for="email">Email</label>
         <input type="email" class="form-control" id="email" name="email" value="{{$customer->email}}">
     </div>

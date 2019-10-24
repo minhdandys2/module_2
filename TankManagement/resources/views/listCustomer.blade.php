@@ -6,6 +6,7 @@
     <tr>
         <th scope="col">STT</th>
         <th scope="col">Name</th>
+        <th scope="col">Age</th>
         <th scope="col">Email</th>
         <th scope="col">Address</th>
         <th scope="col">Action</th>
@@ -16,6 +17,7 @@
         <tr>
             <th scope="row">{{++$key}}</th>
             <td>{{$value->name}}</td>
+            <td>{{$value->age}}</td>
             <td>{{$value->email}}</td>
             <td>{{$value->address}}</td>
             <td>
