@@ -1,3 +1,4 @@
+{{$name}}
 @extends('home')
 @section('content')
     <a href="{{route('customer.create')}}">Create</a>

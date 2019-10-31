@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24b6dc5-e31c-4ef3-9fa4-42a75fa21619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../TankManagement/resources/views/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TankManagement/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TankManagement/resources/views/listCustomer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Timezone/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC-Model/customer_manager/controller/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-Model/customer_manager/controller/CustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC-Model/customer_manager/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-Model/customer_manager/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC-Model/customer_manager/model/CustomerDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-Model/customer_manager/model/CustomerDB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC-Model/customer_manager/view/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-Model/customer_manager/view/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC-Model/customer_manager/view/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-Model/customer_manager/view/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC-Model/customer_manager/view/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-Model/customer_manager/view/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC-Model/customer_manager/view/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-Model/customer_manager/view/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TankManagement/.idea/TankManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TankManagement/.idea/TankManagement.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TankManagement/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TankManagement/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TankManagement/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../TankManagement/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TankManagement/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../TankManagement/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TankManagement/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../TankManagement/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TankManagement/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../TankManagement/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TankManagement/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../TankManagement/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TankManagement/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../TankManagement/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TankManagement/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../TankManagement/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TankManagement/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../TankManagement/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TankManagement/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/../TankManagement/webpack.mix.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -130,7 +130,8 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TankManagement" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -164,6 +165,7 @@
       <workItem from="1571756851117" duration="5693000" />
       <workItem from="1571791604951" duration="4334000" />
       <workItem from="1571842441929" duration="129000" />
+      <workItem from="1571901938699" duration="54000" />
     </task>
     <servers />
   </component>
