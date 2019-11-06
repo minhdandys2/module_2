@@ -9,6 +9,9 @@ class Student extends Model
     protected $table = 'students';
 
     protected $fillable = [
-        'name', 'phone', 'address','image'
+        'name', 'phone', 'address','city_id','image'
     ];
+    public function City(){
+        return $this->belongsTo('App\City');
+    }
 }

@@ -9,10 +9,13 @@
         <div class="form-group mx-sm-3 mb-2">
             <input type="text" class="form-control" id="search" name="search" placeholder="Name/phone/address">
         </div>
-        <input type="submit" class="btn btn-primary mb-2" value="Search">
+        <button type="submit" class="btn btn-outline-success mb-2" value="Search"><img
+                src="https://img.icons8.com/cute-clipart/25/000000/search.png"></button> &nbsp;
+        <button type="button" class="btn btn-outline-success mb-2" ><a
+                href="{{route('student.create')}}" style="color: white"><img
+                    src="https://img.icons8.com/cute-clipart/25/000000/add-property.png"></a>
+        </button>
     </form>
-    <hr>
-    <button type="button" class="btn btn-primary"><a href="{{route('student.create')}}" style="color: white">Create</a>
     </button>
     <table class="table">
         <thead>
@@ -35,9 +38,11 @@
                 <td><img src="{{asset('storage/'.$student->image)}}" width="60" height="50"></td>
                 <td>
                     <button type="button" class="btn btn-outline-success"><a
-                            href="{{route('student.delete',$student->id)}}">Delete</a></button>
+                            href="{{route('student.delete',$student->id)}}"><img
+                                src="https://img.icons8.com/bubbles/25/000000/trash.png"></a></button>
                     <button type="button" class="btn btn-outline-success"><a
-                            href="{{route('student.edit',$student->id)}}">Edit</a></button>
+                            href="{{route('student.edit',$student->id)}}"><img
+                                src="https://img.icons8.com/cute-clipart/25/000000/edit.png"></a></button>
                 </td>
             </tr>
         @endforeach
